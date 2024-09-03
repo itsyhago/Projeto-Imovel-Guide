@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="Style/style.css">
-    <script href="Scrypt/script.js"></script>
+    <script src="js/script.js"></script>
     <title>Texte Front-end</title>
 
 </head>
@@ -14,7 +14,7 @@
         <img src="Fotos/imovelguide.png" alt="LogoGuide">
         <nav>
             <div id="divnav">
-                <ul id="ul1">
+                <ul>
                     <li>Condominios</li>
                     <li>Fórum</li>
                     <li>Guia</li>
@@ -23,17 +23,21 @@
                 </ul>
             </div>
             <div id="divcad">
-                <ul id="ul2" >
-                    <li>Cotar Imóveis</li>
-                    <li>Planos</li>
+                <ul>
+                    <li class="planos">Cotar Imóveis</li>
+                    <li class="planos">Planos</li>
                     <li>Entrar</li>
                 </ul>
-                <button>CADASTRE-SE</button>
+                <button id="cadastre-se">CADASTRE-SE</button>
             </div>
         </nav>
-        <div id="paih">
-            <div id="hamburguer"></div>
-        </div>
+        
+            
+            <button id="paih" onclick="Menu()">
+                <div id="hamburguer" ></div>
+            </button>
+        
+        
     </header>
     <main>
         <div><h1>1</h1></div>
