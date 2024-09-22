@@ -22,7 +22,7 @@ body, html{
 /* Header */
 header{
     width: 100%;
-    height: 55px;
+    height: 60px;
     padding: 5px;
     display: flex;
     justify-content: space-between;
@@ -30,6 +30,9 @@ header{
     background: var(--Cor2);
     box-sizing: border-box;
     overflow: hidden;
+}
+header img{
+    margin: 0px 0px 0px 20px;
 }
 /* Navegação */
 nav{
@@ -129,6 +132,51 @@ nav div{
 
 /* Header */
 
+main{
+   
+}
+footer{
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Cor2);
+    overflow: hidden;
+    font: normal normal 12px var(--Fonte-Principal);
+    text-decoration: none;
+    color: white;
+   
+}
+#foto{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0px 40px 0px 0px;
+
+}
+#foto p{
+    margin: 0px 20px 0px 0px;
+}
+footer ul{
+    display: flex;
+   list-style: none;
+   margin: 0px 0px 0px 40px;
+}
+footer ul li{
+    margin: 0px 20px 0px 0px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;   
+}
+footer img{
+    height: 100%;
+}
 @media screen and (max-width:950px){
     .planos{
         display: none;
