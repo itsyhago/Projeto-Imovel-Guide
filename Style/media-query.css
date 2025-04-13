@@ -1,3 +1,11 @@
+@media screen and (max-width:1210px) {
+    .main{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+
+
 @media screen and (max-width:950px){
     .planos{
         display: none;
@@ -32,7 +40,17 @@
         background-color: var(--color1);
     }
 
-    main{
+    .main{
+        width: fit-content;
         grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:665px){
+    footer{
+        justify-content: center;
+    }
+    
+    footer ul{
+        display: none;
     }
 }

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="Style/main.css">
     <link rel="stylesheet" href="Style/footer.css">
     <link rel="stylesheet" href="Style/media-query.css">
-    <script src="js/script.js"></script>
+    
     <title>Texte Front-end</title>
 
 </head>
@@ -44,7 +44,8 @@
         
     </header>
     <main>
-        <div class="container" id="div1">
+     <div class="main">
+           <div class="container" id="div1">
             <div  class="num">
                 <span>1</span>
             </div>
@@ -60,8 +61,8 @@
                             Nome Corretora
                         </h1>
                         <span class="points">3.000 pontos</span>
-                        <span class="hidden" id="number1"></span>
-                        <span class="phone">ver telefone</span>
+                        <span class="hidden phone" id="phone1">(11)9 5643-9408</span>
+                        <span class="see-phone" id="see1">ver telefone</span>
                     </div>
                 </div>
                 <div class="container__content" >
@@ -75,8 +76,8 @@
                             Nome Corretor
                         </h1>
                         <span class="points">1.260 pontos</span>
-                        <span class="hidden" id="number2"></span>
-                        <span class="phone">ver telefone</span>
+                        <span class="hidden phone" id="phone2">(11)9 7297-3160</span>
+                        <span class="see-phone" id="see2">ver telefone</span>
                     </div>
                 </div>
                 
@@ -88,8 +89,8 @@
             </div>
             <div class="content" id="content2" >
                 <h1>Mande uma mensagem:</h1>
-                <input type="number" placeholder="Digite seu CPF" id="cpf-input">
-                <input type="number" placeholder="Digite seu telefone" id="number-input">
+                <input type="text" maxlength="14" placeholder="Digite seu CPF" id="cpf-input">
+                <input type="text" maxlength="15" placeholder="Digite seu telefone" id="number-input">
                 <textarea  placeholder="Digite o assunto" id="text-input"></textarea>
                 <button id="send-button">Enviar Menssagem</button>
             </div>
@@ -100,7 +101,16 @@
             </div>
             <div class="content" id="content3">
                 <h1>Regra de 3</h1>
-                <div class="conta"></div>
+                <div class="count">
+                    <div class="numbers" id="up">
+                        <input type="number" placeholder="60" id="number1">
+                        <input type="number" placeholder="100" id="number2">
+                    </div>
+                    <div class="numbers" id="down">
+                        <input type="number" placeholder="30" id="number3">
+                        <span id="result"></span>
+                    </div>
+                </div>
                 <button id="calc-button">Calcular</button>
             </div>
         </div>
@@ -108,24 +118,33 @@
             <div  class="num">
                 <span>4</span>
             </div>
-             <div class="content">
-
+            <div class="group">
+                <div class="content house-bg" id="content4"></div>
+                <button id="modal">ABRIR IMAGEM NO MODAL</button>
             </div>
-        </div><div class="container" id="div5">
+            
+        </div>
+        <div class="container"  id="div5">
             <div  class="num">
                 <span>5</span>
             </div>
-            <div class="content">
-
+            <div class="group">
+                <div class="content house-bg" id="content5">
+                    <h2>Imovel Guide</h2>
+                </div>
+                <button id="download">Download</button>
             </div>
-        </div><div class="container" id="div6">
+            
+        </div>
+        <div class="container" id="div6">
             <div  class="num">
                 <span>6</span>
             </div>
-         <div class="content">
-
+            <div class="content house-bg" id="content6">
             </div>
+            
         </div>
+     </div>
     </main>
     <footer>
         <ul>
@@ -139,5 +158,6 @@
             <img src="src/imovelguide.png" alt="">
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
