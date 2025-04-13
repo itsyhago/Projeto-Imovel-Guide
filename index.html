@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/general-configs.css">
+    <link rel="stylesheet" href="Style/header.css">
+    <link rel="stylesheet" href="Style/main.css">
+    <link rel="stylesheet" href="Style/footer.css">
+    <link rel="stylesheet" href="Style/media-query.css">
     <script src="js/script.js"></script>
     <title>Texte Front-end</title>
 
 </head>
 <body>
     <header>
-        <img src="Fotos/imovelguide.png" alt="LogoGuide">
+        <img src="src/imovelguide.png" alt="LogoGuide">
         <nav>
             <div id="divnav">
                 <ul>
@@ -33,19 +37,95 @@
         </nav>
         
             
-            <button id="paih" onclick="Menu()">
+            <button class="menu" onclick="Menu()">
                 <div id="hamburguer" ></div>
             </button>
         
         
     </header>
     <main>
-        <div><h1>1</h1></div>
-        <div><h1>2</h1></div>
-        <div><h1>3</h1></div>
-        <div><h1>4</h1></div>
-        <div><h1>5</h1></div>
-        <div><h1>6</h1></div>
+        <div class="container" id="div1">
+            <div  class="num">
+                <span>1</span>
+            </div>
+            <div class="content" id="content1">
+                <div class="container__content" id="container__content1">
+                    <div  class="image__content" id="image1">
+                        <img src="src/mulher.jpg" alt="">
+                        <div class="blur-overlay"></div>
+                    </div>
+                    
+                    <div class="information">
+                        <h1>
+                            Nome Corretora
+                        </h1>
+                        <span class="points">3.000 pontos</span>
+                        <span class="hidden" id="number1"></span>
+                        <span class="phone">ver telefone</span>
+                    </div>
+                </div>
+                <div class="container__content" >
+                    <div class="image__content" id="image2">
+                        <img  src="src/homem.jpg" alt="">
+                        <div class="blur-overlay"></div>
+                    </div>
+                   
+                    <div class="information">
+                        <h1>
+                            Nome Corretor
+                        </h1>
+                        <span class="points">1.260 pontos</span>
+                        <span class="hidden" id="number2"></span>
+                        <span class="phone">ver telefone</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container" id="div2">
+            <div>
+                <span class="num">2</span>
+            </div>
+            <div class="content" id="content2" >
+                <h1>Mande uma mensagem:</h1>
+                <input type="number" placeholder="Digite seu CPF" id="cpf-input">
+                <input type="number" placeholder="Digite seu telefone" id="number-input">
+                <textarea  placeholder="Digite o assunto" id="text-input"></textarea>
+                <button id="send-button">Enviar Menssagem</button>
+            </div>
+        </div>
+            <div class="container" id="div3">
+            <div class="num">
+                <span>3</span>
+            </div>
+            <div class="content" id="content3">
+                <h1>Regra de 3</h1>
+                <div class="conta"></div>
+                <button id="calc-button">Calcular</button>
+            </div>
+        </div>
+            <div class="container" id="div4">
+            <div  class="num">
+                <span>4</span>
+            </div>
+             <div class="content">
+
+            </div>
+        </div><div class="container" id="div5">
+            <div  class="num">
+                <span>5</span>
+            </div>
+            <div class="content">
+
+            </div>
+        </div><div class="container" id="div6">
+            <div  class="num">
+                <span>6</span>
+            </div>
+         <div class="content">
+
+            </div>
+        </div>
     </main>
     <footer>
         <ul>
@@ -56,7 +136,7 @@
         
         <div id = "foto">
             <p>Copyright 2002. Todos os direitos reservados.</p>
-            <img src="Fotos/imovelguide.png" alt="">
+            <img src="src/imovelguide.png" alt="">
         </div>
     </footer>
 </body>

@@ -1,0 +1,38 @@
+@media screen and (max-width:950px){
+    .planos{
+        display: none;
+    }
+}
+
+@media screen and (max-width:840px) {
+    nav{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+   
+    #hamburguer::after,#hamburguer::before{
+        display: flex;
+        content: '';
+        background-color: var(--color4);
+        width: 35px;
+        height: 5px;
+        position: absolute;
+        border-radius: 10px;
+        
+    }
+   
+    .menu:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .menu:hover #hamburguer, .menu:hover #hamburguer::after,.menu:hover #hamburguer::before {
+        background-color: var(--color1);
+    }
+
+    main{
+        grid-template-columns: 1fr;
+    }
+}
