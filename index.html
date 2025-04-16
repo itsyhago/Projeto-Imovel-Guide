@@ -120,7 +120,16 @@
             </div>
             <div class="group">
                 <div class="content house-bg" id="content4"></div>
-                <button id="modal">ABRIR IMAGEM NO MODAL</button>
+                <button id="openModal">ABRIR IMAGEM NO MODAL</button>
+                <div class="modal-overlay hidden">
+                    <dialog id="modal">
+                        <div class="headerModal"><button id="closeModal">x</button></div>
+                        <div class="modal-img">
+                            <img src="src/casa.jpg" alt="Imovel Guide">
+                        </div>
+                    </dialog>
+                </div>
+                
             </div>
             
         </div>
@@ -132,7 +141,7 @@
                 <div class="content house-bg" id="content5">
                     <h2>Imovel Guide</h2>
                 </div>
-                <button id="download">Download</button>
+                <a href="src/casa.jpg" download><button  id="download">Download</button></a>
             </div>
             
         </div>

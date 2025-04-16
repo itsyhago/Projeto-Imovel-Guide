@@ -242,9 +242,57 @@ input[type=number] {
 #content4{
     margin-bottom: 20px;
 }
-#modal{
+#openModal{
     width: 100%;
     padding: 10px;
+}
+
+#modal{
+    position: fixed;
+    width: fit-content;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* cinza escuro com 50% de opacidade */
+    z-index: 999; /* garante que fique acima do conteúdo */
+  }
+.headerModal{
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    border-bottom: 1px var(--color5) solid;
+    height: 50px;
+}
+.headerModal #closeModal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    height: 100%;
+    font: normal bolder 35px var(--font);
+    color: red;
+    background-color: transparent;
+}
+
+.modal-img{
+    width: 80vw;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: center;
+}
+.modal-img img{
+    width: 80%;
+    border-radius: 10px;
 }
 /* Div - 4 */
 
@@ -270,5 +318,8 @@ input[type=number] {
 #download{
     padding: 10px;
     width: 200px;
+}
+.group a{
+    width: fit-content;
 }
 /* Div - 5 */

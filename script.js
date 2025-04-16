@@ -2,6 +2,13 @@ document.getElementById("see1").addEventListener("click", showPhone1)
 document.getElementById("see2").addEventListener("click", showPhone2)
 document.getElementById("send-button").addEventListener("click", message)
 document.getElementById("calc-button").addEventListener("click", calc)
+document.getElementById("openModal").addEventListener("click",openModal)
+document.getElementById("closeModal").addEventListener("click",closeModal)
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+      closeModal();
+    }
+  });
 const cpfIp = document.getElementById("cpf-input")
 cpfIp.addEventListener("input", ()=>{
     let cpflength = Number(cpfIp.value.length)
@@ -75,7 +82,7 @@ function calc(){
     num2.classList.remove("error")
     num3.style.borderColor = "#787878"
     num3.classList.remove("error")
-    if (num1.value == ""){
+    if (num1.value == "" || num1.value == 0){
         num1.style.borderColor = "Red"
         num1.classList.add("error")
     }else if(num2.value == ""){
@@ -87,6 +94,17 @@ function calc(){
     }else{
         result.innerText = parseFloat((num2.value*num3.value)/num1.value).toFixed(2)
     }
+}
+const modal = document.getElementById("modal")
+const closeBt = document.getElementById("close")
+const modalOverlay = document.querySelector(".modal-overlay")
+function openModal(){
+    modal.showModal()
+    modalOverlay.classList.remove("hidden")
+}
+function closeModal(){
+    modal.close()
+    modalOverlay.classList.add("hidden")
 }
 function Menu() {
 
