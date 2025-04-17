@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="Style/general-configs.css">
+    <link rel="stylesheet" href="Style/header.css">
+    <link rel="stylesheet" href="Style/main.css">
+    <link rel="stylesheet" href="Style/footer.css">
+    <link rel="stylesheet" href="Style/media-query.css">
+    
+    <title>Texte Front-end</title>
+
+</head>
+<body>
+    <header>
+        <img src="src/imovelguide.png" alt="LogoGuide">
+        <nav>
+            <div id="divnav">
+                <ul>
+                    <li><div class="line"><a href="#">Condominios</a></div></li>
+                    <li><div class="line"><a href="#">Fórum</a></div></li>
+                    <li><div class="line"><a href="#">Guia</a></div></li>
+                    <li><div class="line"><a href="#">Artigos</a></div></li>
+                    <li><div class="line"><a href="#">Ferramentas</a></div></li>
+                </ul>
+            </div>
+            <div id="divcad">
+                <ul>
+                    <li class="planos"><a href="#">Cotar Imóveis</a></li>
+                    <li class="planos"><a href="#">Planos</a></li>
+                    <li class="cadastro"><a href="#">Entrar</a></li>
+                </ul>
+                <button class="cadastro" id="cadastre-se">CADASTRE-SE</button>
+            </div>
+        </nav>
+            
+            <button class="menu" onclick="menu()">
+                <div id="hamburguer" ></div>
+            </button>
+        
+        
+    </header>
+    <main>
+     <div class="main">
+           <div class="container" id="div1">
+            <div  class="num">
+                <span>1</span>
+            </div>
+            <div class="content" id="content1">
+                <div class="container__content" id="container__content1">
+                    <div  class="image__content" id="image1">
+                        <img src="src/mulher.jpg" alt="">
+                        <div class="blur-overlay"></div>
+                    </div>
+                    
+                    <div class="information">
+                        <h1>
+                            Nome Corretora
+                        </h1>
+                        <span class="points">3.000 pontos</span>
+                        <span class="hidden phone" id="phone1">(11)9 5643-9408</span>
+                        <span class="see-phone" id="see1">ver telefone</span>
+                    </div>
+                </div>
+                <div class="container__content" >
+                    <div class="image__content" id="image2">
+                        <img  src="src/homem.jpg" alt="">
+                        <div class="blur-overlay"></div>
+                    </div>
+                   
+                    <div class="information">
+                        <h1>
+                            Nome Corretor
+                        </h1>
+                        <span class="points">1.260 pontos</span>
+                        <span class="hidden phone" id="phone2">(11)9 7297-3160</span>
+                        <span class="see-phone" id="see2">ver telefone</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container" id="div2">
+            <div>
+                <span class="num">2</span>
+            </div>
+            <div class="content" id="content2" >
+                <h1>Mande uma mensagem:</h1>
+                <input type="text" maxlength="14" placeholder="Digite seu CPF" id="cpf-input">
+                <input type="text" maxlength="15" placeholder="Digite seu telefone" id="number-input">
+                <textarea  placeholder="Digite o assunto" id="text-input"></textarea>
+                <button id="send-button">Enviar Menssagem</button>
+            </div>
+        </div>
+            <div class="container" id="div3">
+            <div class="num">
+                <span>3</span>
+            </div>
+            <div class="content" id="content3">
+                <h1>Regra de 3</h1>
+                <div class="count">
+                    <div class="numbers" id="up">
+                        <input type="number" placeholder="60" id="number1">
+                        <input type="number" placeholder="100" id="number2">
+                    </div>
+                    <div class="numbers" id="down">
+                        <input type="number" placeholder="30" id="number3">
+                        <span id="result"></span>
+                    </div>
+                </div>
+                <button id="calc-button">Calcular</button>
+            </div>
+        </div>
+            <div class="container" id="div4">
+            <div  class="num">
+                <span>4</span>
+            </div>
+            <div class="group">
+                <div class="content house-bg" id="content4"></div>
+                <button id="openModal">ABRIR IMAGEM NO MODAL</button>
+                <div class="modal-overlay hidden">
+                    <dialog id="modal">
+                        <div class="headerModal"><button id="closeModal">x</button></div>
+                        <div class="modal-img">
+                            <img src="src/casa.jpg" alt="Imovel Guide">
+                        </div>
+                    </dialog>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="container"  id="div5">
+            <div  class="num">
+                <span>5</span>
+            </div>
+            <div class="group">
+                <div class="content house-bg" id="content5">
+                    <h2>Imovel Guide</h2>
+                </div>
+                <a href="src/casa.jpg" download><button  id="download">Download</button></a>
+            </div>
+            
+        </div>
+        <div class="container" id="div6">
+            <div  class="num">
+                <span>6</span>
+            </div>
+            <div class="content house-bg" id="content6">
+            </div>
+            
+        </div>
+     </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="">Termos</a></li>
+            <li><a href="">Contatos</a></li>
+            <li><a href="">Sobre</a></li>
+        </ul>
+        
+        <div id = "foto">
+            <p>Copyright 2002. Todos os direitos reservados.</p>
+            <img src="src/imovelguide.png" alt="">
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

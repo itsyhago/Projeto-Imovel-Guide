@@ -1,0 +1,42 @@
+footer{
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color2);
+    overflow: hidden;
+    font: normal normal 12px var(--font);
+    text-decoration: none;
+    color: white;
+   
+}
+#foto{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0px 40px 0px 0px;
+
+}
+#foto p{
+    margin: 0px 20px 0px 0px;
+}
+footer ul{
+    display: flex;
+   list-style: none;
+   margin: 0px 0px 0px 40px;
+}
+footer ul li{
+    margin: 0px 20px 0px 0px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;   
+}
+footer img{
+    height: 100%;
+}

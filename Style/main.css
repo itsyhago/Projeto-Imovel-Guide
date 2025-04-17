@@ -1,0 +1,331 @@
+main{
+    display: flex;
+    justify-content: center;
+    margin: 80px 50px;
+    
+}
+.main{
+   display: grid;
+   width: 100%;
+   grid-template-columns: repeat(3, auto);
+   gap: 50px min(100%,20px);
+   
+   height: fit-content;
+}
+.container{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    height: fit-content;
+}
+.container .num{
+    font: normal bold 16px var(--font);
+   
+}
+.container .content{
+    border: 1px var(--color3) solid;
+    border-radius: 5px;
+    margin-left: 5px;
+    width: 350px;
+    height: 320px;
+}
+.house-bg{
+    background: url("../src/casa-corte.jpg") no-repeat center center;
+    background-size: cover;
+}
+button{
+    background: var(--color1);
+    font: normal normal 15px var(--font);
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: transform .5s ;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.04); 
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+.error::-webkit-input-placeholder {
+    color: var(--color7)
+}
+/* Div - 1 */
+#content1{
+    padding: 10px;
+}
+.container__content{
+    display: flex;
+    height: 144px;
+    
+}
+#container__content1{
+    margin-bottom: 10px;
+}
+.container__content .image__content{
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 140px;
+    margin-right: 10px;
+    justify-content: center;
+    border: 0.5px solid var(--color3);
+    border-radius: 5px;
+    
+} 
+#image1{
+    background:  url("../src/mulher.jpg")  no-repeat center center;
+    Background-size: 130%;
+}   
+#image2{
+    background:  url("../src/homem.jpg")  no-repeat center center;
+    Background-size: 140%;
+}   
+.blur-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    backdrop-filter: blur(2px);
+    background-color: #7878781a;
+    z-index: 1;
+}
+.image__content img{
+    height: 100%;
+    z-index: 2;
+     
+}   
+.information{
+    display: flex;
+    flex-direction: column;
+    color: var(--color2);
+    font-family: var(--font);
+}
+.information h1{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30%;
+   
+}
+.information .points{
+    font-size: 12px;
+}
+.information .phone{
+    font-size: 10px;
+}
+.information .see-phone{
+    font-size: 10px;
+    text-decoration: underline;
+    transition: transform .5s ;
+}
+.information .see-phone:hover{
+    cursor: pointer;
+    color: var(--color1);
+    transform: scale(1.1) translateX(5px);
+}
+.hidden{
+    display: none;
+}
+/* Div - 1 */
+
+/* Div - 2 */
+#content2{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+#content2 h1{
+    font: normal normal 26px var(--font);
+    color: var(--color2 );
+    margin-bottom: 10x;
+}
+
+#content2 input, #content2 textarea{
+    width: 300px;
+    font: normal normal 15px var(--font);
+    color: var(--color3);
+    border: 1px solid var(--color3);
+    border-radius: 3px;
+}
+#cpf-input, #number-input{
+    padding: 5px;
+    font: normal normal 15px var(--font);
+    
+}
+#text-input{
+    height: 85px;
+    padding: 10px;
+    font: normal normal 15px var(--font);
+    resize: none;
+}
+#send-button{
+    width: fit-content;
+}
+
+/* Div - 2 */
+
+/* Div - 3 */
+#content3{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+#content3 h1{
+    font: normal normal 26px var(--font);
+    color: var(--color2 );
+    margin-bottom: 50px; 
+}
+.count{
+    margin-bottom: 70px;
+}
+.numbers{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.numbers#up{
+    margin-bottom: 20px;
+}
+.numbers input, #result{
+    width: 115px;
+    padding: 5px;
+    border: 1px solid var(--color3);
+    border-radius: 3px ;
+}
+#result{
+    border:1.7px solid var(--color1) ;
+}
+
+#number1, #number3{
+    margin-right: px;
+}
+.numbers::after{
+    content: '';
+    width:50px;
+    height: 2px;
+    background-color: black;
+    border-radius: 150px;
+    position: absolute;
+    left: 129px;
+    top: 12px;
+}
+#calc-button{
+    width: 100px;
+}
+
+/* Div - 3 */
+
+/* Div - 4 */
+#content4{
+    margin-bottom: 20px;
+}
+#openModal{
+    width: 100%;
+    padding: 10px;
+}
+#modal{
+    position: fixed;
+    width: fit-content;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 999; 
+}
+.headerModal{
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    border-bottom: 1px var(--color5) solid;
+    height: 50px;
+}
+.headerModal #closeModal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    height: 100%;
+    font: normal bolder 35px var(--font);
+    color: var(--color7);
+    background-color: transparent;
+}
+.modal-img{
+    width: 80vw;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: center;
+}
+.modal-img img{
+    width: 80%;
+    border-radius: 10px;
+}
+/* Div - 4 */
+
+/* Div - 5*/
+#content5{
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    
+}
+#content5 h2{
+    width: 280px;
+    padding: 10px;
+    font: normal normal 15px var(--font);
+    color: var(--color4);
+    background-color: var(--color6);
+    border-radius: 3px;
+    height: fit-content;
+    text-align: center;
+}
+#download{
+    padding: 10px;
+    width: 200px;
+}
+.group a{
+    width: fit-content;
+}
+/* Div - 5 */
+
+/* Div - 6 */
+#content6{
+    animation: bg-zoom 10s ;
+}
+@keyframes bg-zoom {
+    from{
+        background-size: 250%;
+    }
+    to{
+        background-size: 127.5%;
+    }
+}
+/* Div - 6 */

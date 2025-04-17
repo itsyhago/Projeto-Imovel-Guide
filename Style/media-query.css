@@ -1,0 +1,80 @@
+@media screen and (max-width:1210px) {
+    .main{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+@media screen and (max-width:950px){
+    .planos{
+        display: none;
+    }
+}
+@media screen and (max-width:840px) {
+    .cadastro{
+        display: none;
+    }
+    #divnav ul{
+        display: none;
+        width: 100%;
+        font-size: 20px;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        flex-direction: column;
+        background-color: var(--color2);
+        z-index: 999;
+    }
+    #divnav ul.show{
+        display: flex;
+    }
+    #divnav ul .line{
+        transition: transform 0.5s;
+    }
+    #divnav ul li{
+        margin: 0px;
+        border-top: 1px var(--color5) solid;
+        padding: 10px 0px 10px 10px;
+        
+    }
+    #divnav ul li a{
+        font-size: 16px;
+    }
+    #divnav ul li{
+        transform: scale(1);
+    }
+    #divnav ul li:hover .line{
+        transform: scale(1.1) translateX(10px);
+    }   
+    .menu{
+        display: flex;
+    }
+    .main{
+        width: fit-content;
+        grid-template-columns: 1fr;
+    }
+
+    .modal-img{
+        width: 80vw;
+        padding: 20px 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .modal-img img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width:665px){
+    footer{
+        justify-content: center;
+    }
+    
+    footer ul{
+        display: none;
+    }
+    #foto p{
+        text-align: center;
+    }
+   
+}

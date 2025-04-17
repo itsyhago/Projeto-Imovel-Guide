@@ -1,0 +1,115 @@
+header{
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    background: var(--color2);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+header img{
+    margin: 0px 0px 0px 20px;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+   
+}
+#divcad ul{
+    margin: 0px 40px 0px 0px;
+}
+nav ul li{
+    display: flex;
+    list-style: none;
+   margin: 0px 0px 0px 20px;
+   transition: transform .5s ;
+}
+nav ul li a{
+    color: var(--color4);
+    text-decoration: none;
+    font: normal normal 12px var(--font);
+}
+nav ul li:hover a{
+    color: var(--color1);
+}
+nav ul li:hover{
+    cursor: pointer;
+    transform: scale(1.1)
+}
+nav div{
+    display: flex;
+    align-items: center;
+}
+#divnav{
+    margin: 0px 0px 0px 30px;
+}
+#divcad{
+    margin: 0px 40px 0px 0px;
+
+}
+#cadastre-se{
+    color: var(--color4);
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 2px solid var(--color4);
+    border-radius: 30px;
+    box-sizing: border-box;
+    transition: transform .5s ;
+}
+#cadastre-se:hover{
+    cursor: pointer;
+    color: var(--color1);
+    border: 2px solid var(--color1);
+    transform: scale(1.04);
+}
+
+.menu{
+    margin: 0px 20px 0px 0px;
+    background-color: transparent;
+    border: transparent;
+    display: none;
+    align-items: center;
+    position: relative;
+    width: 35px;
+    height: 100%;
+    transition: transform 0.5s
+}
+.menu:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#hamburguer{
+    width: 35px;
+    height: 5px;
+    position: absolute;
+    background-color: var(--color4);
+    border-radius: 10px;
+    transition: color 0.5s;
+}
+#hamburguer::after,#hamburguer::before{
+    display: flex;
+    content: '';
+    background-color: white;
+    width: 35px;
+    height: 5px;
+    position: absolute;
+    border-radius: 10px;
+    
+}
+#hamburguer::after{
+    top: -10px;
+}
+#hamburguer::before{
+    bottom: -10px;
+}
+.menu:hover #hamburguer, .menu:hover #hamburguer::after,.menu:hover #hamburguer::before {
+    background-color: var(--color1);
+}
+
