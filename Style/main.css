@@ -44,7 +44,7 @@ button{
 }
 button:hover{
     cursor: pointer;
-    transform: scale(1.1); 
+    transform: scale(1.04); 
 }
 .group{
     display: flex;
@@ -61,7 +61,7 @@ input[type=number] {
 
 }
 .error::-webkit-input-placeholder {
-    color: red
+    color: var(--error)
 }
 /* Div - 1 */
 #content1{

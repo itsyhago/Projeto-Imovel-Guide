@@ -106,6 +106,7 @@ function closeModal(){
     modal.close()
     modalOverlay.classList.add("hidden")
 }
-function Menu() {
-
+function menu() {
+    const menu = document.querySelector("#divnav > ul")
+    menu.classList.toggle("show")
 }

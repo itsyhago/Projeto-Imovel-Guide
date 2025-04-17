@@ -21,21 +21,28 @@ nav{
 nav ul{
     display: flex;
     list-style: none;
-    color: var(--color4);
-    font: normal normal 12px var(--font);
+   
 }
 #divcad ul{
     margin: 0px 40px 0px 0px;
 }
+
 nav ul li{
+    display: flex;
+    list-style: none;
    margin: 0px 0px 0px 20px;
    transition: transform .5s ;
 }
-
-nav ul li:hover{
+nav ul li a{
+    color: var(--color4);
+    text-decoration: none;
+    font: normal normal 12px var(--font);
+}
+nav ul li:hover a{
     color: var(--color1);
+}
+nav ul li:hover{
     cursor: pointer;
-
     transform: scale(1.1)
 }
 nav div{
@@ -63,7 +70,7 @@ nav div{
     cursor: pointer;
     color: var(--color1);
     border: 2px solid var(--color1);
-    transform: scale(1.1);
+    transform: scale(1.04);
 }
 
 .menu{
@@ -77,6 +84,10 @@ nav div{
     height: 100%;
     transition: transform 0.5s
 }
+.menu:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 #hamburguer{
     width: 35px;
     height: 5px;
@@ -85,9 +96,8 @@ nav div{
     border-radius: 10px;
     transition: color 0.5s;
 }
-
 #hamburguer::after,#hamburguer::before{
-    display: none;
+    display: flex;
     content: '';
     background-color: white;
     width: 35px;
@@ -96,10 +106,13 @@ nav div{
     border-radius: 10px;
     
 }
-
 #hamburguer::after{
     top: -10px;
 }
 #hamburguer::before{
     bottom: -10px;
 }
+.menu:hover #hamburguer, .menu:hover #hamburguer::after,.menu:hover #hamburguer::before {
+    background-color: var(--color1);
+}
+

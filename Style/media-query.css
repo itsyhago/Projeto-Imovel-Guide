@@ -13,33 +13,44 @@
 }
 
 @media screen and (max-width:840px) {
-    nav{
+    .cadastro{
         display: none;
     }
+    #divnav ul{
+        display: none;
+        width: 100%;
+        font-size: 20px;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        flex-direction: column;
+        background-color: var(--color2);
+        z-index: 999;
+    }
+    #divnav ul.show{
+        display: flex;
+    }
+    #divnav ul .line{
+        transition: transform 0.5s;
+    }
+    #divnav ul li{
+        margin: 0px;
+        border-top: 1px var(--color5) solid;
+        padding: 10px 0px 10px 10px;
+        
+    }
+    #divnav ul li a{
+        font-size: 16px;
+    }
+    #divnav ul li{
+        transform: scale(1);
+    }
+    #divnav ul li:hover .line{
+        transform: scale(1.1) translateX(10px);
+    }   
     .menu{
         display: flex;
     }
-   
-    #hamburguer::after,#hamburguer::before{
-        display: flex;
-        content: '';
-        background-color: var(--color4);
-        width: 35px;
-        height: 5px;
-        position: absolute;
-        border-radius: 10px;
-        
-    }
-   
-    .menu:hover{
-        transform: scale(1.1);
-        cursor: pointer;
-    }
-
-    .menu:hover #hamburguer, .menu:hover #hamburguer::after,.menu:hover #hamburguer::before {
-        background-color: var(--color1);
-    }
-
     .main{
         width: fit-content;
         grid-template-columns: 1fr;
